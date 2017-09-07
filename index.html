@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Group Assigner</title>
+    <style media="screen">
+      body {
+      font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+      font-weight: 300;
+      }
+
+      #title{
+        margin: auto;
+        width: 50%
+      }
+
+      #group-creation-form {
+        width: 200px;
+        margin-top: 100px
+        font-size:3rem;
+        border:1px solid #fecd2f;
+        color: #2d72fcc
+      }
+
+      #student-creation-form{
+        width: 200px;
+        margin-top: 100px
+        font-size:3rem;
+        border:1px solid #fecd2f;
+        color: #2d72fc
+      }
+
+      #randomize-button {
+        width: auto;
+        margin-bottom: 100px
+      }
+
+      input:focus {
+        outline: none;
+      }
+
+      #group-container {
+        float:left;
+        width:250px;
+      }
+
+      #student-container {
+        float:right;
+        width:250px;
+      }
+
+      #random-button-container {
+        float:center;
+        width:auto;
+      }
+
+      .center-text {
+        text-align: center;
+      }
+
+      #group-assignments{
+        width: 400px;
+        height: 400px;
+        margin-left: -150px;
+        border: 1px solid #105cbd
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div id="title">
+      <h2 id="title-header">Groups For Assignment</h2>
+    </div>
+    <div id="group-container">
+      <form id="group-creation-form" action="" method="">
+        <input id="group-name" type="text" name="" value="">
+        <input id="group-submit" type="submit" name="" value="Add a Group">
+      </form>
+      <h2 id="groups">Group List</h2>
+    </div>
+    <div id="student-container">
+    <form id="student-creation-form" action="" method="">
+      <input id="student-name"type="text" name="" value="">
+      <input id="student-submit" type="submit" name="" value="Add a Student">
+    </form>
+    <h2 id="students">Student List</h2>
+  </div>
+  <div id="random-button-container">
+    <form id="randomizer" action="" method="">
+      <input id="randomize-button" type="submit" name="" value="Create Random Groups">
+    </form>
+  </div>
+  <div id='group-assignments-container'>
+  </div>
+
+  </body>
+  <script src="creation.js" charset="utf-8"></script>
+  <script src="index.js" charset="utf-8"></script>
+  <script src="student-creator.js" charset="utf-8"></script>
+  <script src="group-creator.js" charset="utf-8"></script>
+</html>
